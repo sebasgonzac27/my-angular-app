@@ -1,0 +1,37 @@
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: transform 0.1s ease-in-out;
+    height: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+        
+    &:hover {
+        transform: scale(1.01);
+    }
+
+    &__image {
+        width: 100%;
+        height: clamp(120px, 15vw, 500px);
+        border-radius: 1rem;
+        object-fit: contain;
+        margin-bottom: 1rem;
+    }
+
+    &__name {
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
+
+    &__price {
+        font-size: 1rem;
+        font-weight: bold;
+        color: green;
+    }
+}

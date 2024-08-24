@@ -1,0 +1,8 @@
+<article class="product-card" *ngIf="product">
+  <img
+    [src]="product.image"
+    [alt]="product.title"
+    class="product-card__image" />
+  <h2 class="product-card__name">{{ product.title }}</h2>
+  <p class="product-card__price">{{ product.price | currency }}</p>
+</article>
